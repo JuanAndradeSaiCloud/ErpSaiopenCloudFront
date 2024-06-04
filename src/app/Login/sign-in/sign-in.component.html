@@ -1,0 +1,63 @@
+<div class="wrapper fadeInDown" >
+    <div class="card" id="formContent">
+        <img src="assets/others/logo-saiopencloud-nuevo.png" id="icon" alt="User Icon" />
+        <h2 style="margin-top: 20px;">Iniciar Sesión</h2>
+        <form [formGroup]="signInForm" #signInNgForm="ngForm">
+            <div style="margin-top: 20px;">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Usuario:</mat-label>
+                    <input id="email" matInput [formControlName]="'email'">
+                    <div class="mat-error-container">
+                        <mat-error *ngIf="signInForm.get('email').hasError('required')">
+                            Es necesario una dirección de correo.
+                        </mat-error>
+                        <mat-error *ngIf="signInForm.get('email').hasError('email')">
+                            Por favor, ingrese un correo valido.
+                        </mat-error>
+                    </div>
+                </mat-form-field>
+            </div>
+    
+            <div style="margin-top: 10px;">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Contraseña:</mat-label>
+                    <input id="password" matInput type="password" [formControlName]="'password'" #passwordField>
+                    <mat-error>
+                        Es necesaria una constraseña.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+    
+            <div class="button-container">
+                <button class="btn-signin" mat-flat-button [style.background]="'#1e293b'"
+                        [disabled]="signInForm.disabled" (click)="signIn()">
+                    <span *ngIf="!signInForm.disabled">
+                        Ingresar
+                    </span>
+                    <mat-progress-spinner *ngIf="signInForm.disabled" [diameter]="24" [mode]="'indeterminate'"></mat-progress-spinner>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="fromFooter">
+        <b>SAIOpenCloud.</b> Todos los derechos reservados | Copyright &copy; 2023.
+    </div>
+</div>
+
+<div class="welcome flex items-center" style="overflow: hidden;">
+    <img src="" alt="Logo 2" class="logo absolute " id="logo2">
+    <svg class="absolute inset-0 pointer-events-none animated-ring" viewBox="0 0 960 540" width="100%" height="100%"
+        preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+        <g>
+            <circle class="ring-circle" r="234" cx="196" cy="23"></circle>
+        </g>
+    </svg>
+    <div class="text-container">
+        <h2>Bienvenido al <br>ERP SAIOpenCLOUD</h2>
+        <p>Está diseñado para ofrecer a las pequeñas y medianas empresas una herramienta integral que facilite la
+            productividad, efectividad y competitividad del negocio. Por su diseño en línea permite consultar la información
+            oportuna en el momento que se necesite.
+        </p>
+    </div>
+</div>

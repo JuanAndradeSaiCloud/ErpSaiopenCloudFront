@@ -1,0 +1,230 @@
+h2, h3, p, a, th{
+    font-family: 'Inter', sans-serif;
+  }
+  .navbar{
+    background-color: #0F4D7E;
+    color: #FDFDFD;
+    border: 0;
+    border-radius: 0px;
+    padding: 0.625rem 0;
+    height: 60px;
+    box-shadow: none;background-image: url(/assets/img/fondo-menu.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 200px 150px;
+    position: fixed;
+    top: 0;
+    width:auto;
+    margin-left: 260px;
+  }
+  .container-fluid .navbar-brand{
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .navbar .navbar-wrapper-icon img{
+      margin-top: -3px;
+      top: 0px;
+      width: 70px;
+      height: 40px;
+      position: relative;
+    
+    }
+    .navbar .navbar-wrapper .navbar-brand img{
+      margin-top: -3px;
+      top: 0px;
+      width: 20px;
+      height: 20px;
+      position: relative;
+    
+    }
+    .navbar-nav{
+      padding: 0;
+    }
+    .nav-link{
+      padding: 0;
+    }
+    .navbar .navbar-nav .nav-link img{
+      width: 20px;
+      height: 20px;
+      position: relative;
+    }
+    .navbar .navbar-nav .nav-item  img{
+      width: 20px;
+      height: 20px;
+      position: relative;
+    }
+    .navbar .navbar-nav .nav-p{
+      padding: 0;
+      margin-top: 10px;
+      padding-top: 4px;
+      cursor: pointer;
+    }
+    .navbar .navbar-nav .nav-img  img{
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+  .navwactive{
+      background-color: #00bcd4!important;
+  }
+  .navw{
+      background-color: #999999;
+      border-radius: 5px;
+      color: white;
+      margin-left: 2px;
+      margin-right: 2px;
+      cursor: pointer;
+  }
+  .dropdown-menu{
+    background: rgba(255, 255, 255, 0.11) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(2.3px) !important;
+    -webkit-backdrop-filter: blur(2.3px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-top: 0px !important;
+    margin-top: 0px !important;
+    padding: 0;
+    border-radius: 0 0 0 10px !important;
+    overflow: hidden;
+  }
+  .dropdown-item{
+    border-radius: 0px;
+    margin-top: 0px !important;
+    margin-right: 2px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500;
+  }
+  .dropdown-item:hover{
+    border-radius: 0px;
+  }
+  
+  .dropdown-item:hover a{
+    background-color: none !important;
+  }
+  
+  .mensaje, .notificacion{
+    margin-bottom: 10px !important;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .mensaje:hover, .notificacion:hover{
+    background-color: none !important;
+  }
+  
+  .name_mensaje, .name_notificacion{
+    border-radius: 0px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100% !important;
+    display: block;
+    color: #000;
+    transition: all 150ms linear;
+    padding: 0.625rem 0 0 0 !important;
+    word-wrap: break-word;
+    background-color: none;
+    cursor: pointer;
+    margin-right: 0px !important;
+  }
+  
+  .name_mensaje:hover, .name_notificacion:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  
+  
+  .body_mensaje, .body_notificacion{
+    border-radius: 0px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100% !important;
+    display: block;
+    color: #000;
+    transition: all 150ms linear;
+    padding-top: 5px !important;
+    word-wrap: break-word;
+    margin-right: 0px !important;
+    margin-bottom: 10px !important;
+  }
+  .footer_notificacion, .footer_mensaje{
+    border-radius: 0px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100% !important;
+    display: block;
+    color: #000;
+    transition: all 150ms linear;
+    padding-top: 5px !important;
+    word-wrap: break-word;
+    margin-right: 0px !important;
+    margin-bottom: 10px !important;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .mensaje .img img{
+    border-radius: 50%;
+    margin: 10px 8px 8px 8px !important; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .notificacion .img img{
+    border-radius: 50%;
+    margin: 10px 8px 8px 8px !important; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .alert-notification{
+    box-shadow: none;
+    animation: wiggle 2s linear infinite;
+  }
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+  .visible{
+    font-weight: 500;
+    font-family: sans-serif; 
+    font-size: 18px; 
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  
+  @media (max-width: 767px) {
+    .visible{
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .navbar{
+      margin-left: 0;
+    }
+  }

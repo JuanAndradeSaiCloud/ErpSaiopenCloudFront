@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: "Roboto", "Helvetica Neue", sans-serif!important; 
+}
+.tim-typo{
+    padding-left: 25%;
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+  }
+  .tim-typo .tim-note{
+    bottom: 5px;
+    color: #c0c1c2;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    left: 0;
+    margin-left: 20px;
+    position: absolute;
+    width: 260px;
+  }
+ th,td{
+   /* padding-left: 1px!important;*/
+    padding-right: 1px!important;
+    padding-bottom: 0.1rem!important;
+    padding-top: 0.1rem!important;
+  }
+  .cdk-overlay-backdrop.cdk-overlay-backdrop-showing{
+    opacity: 1 !important;
+  }
+
+  .btn-close {
+    width: 53px;
+    height: 40px;
+    background: url(/assets/img/icono-cerrar-ventana.png) no-repeat;
+
+  }
+  .btn-close:hover {
+    width: 53px;
+    height: 40px;
+    background: url(/assets/img/icono-cerrar-ventana-hover.png) no-repeat;
+  }
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90!important;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100!important;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+.navbar.navbar-absolute {
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
+  z-index: 100!important;
+}

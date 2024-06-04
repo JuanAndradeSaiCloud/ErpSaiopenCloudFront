@@ -1,0 +1,147 @@
+<div class="logo">
+    <a href="#" class="simple-text">
+      <div class="logo-img">
+        <img src="/assets/Logo.png" />
+      </div>
+      SAIOpen Cloud
+    </a>
+  </div>
+  <div class="sidebar-wrapper">
+    <div *ngIf="isMobileMenu()">
+      <ul class="nav navbar-nav nav-mobile-menu">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="javascript:void(0)"
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img src="assets/img/icono-notificaciones-mobile1.png" alt="" />
+            <!-- <span class="notification">5</span> -->
+            
+            <p>
+              <span class="d-lg-none d-md-block">Notificaciones</span>
+            </p>
+          </a>
+          <div
+            class="dropdown-menu dropdown-menu-right"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <a class="dropdown-item" href="#"
+              >Mike John responded to your email</a
+            >
+            <a class="dropdown-item" href="#">You have 5 new tasks</a>
+            <a class="dropdown-item" href="#">You're now friend with Andrew</a>
+            <a class="dropdown-item" href="#">Another Notification</a>
+            <a class="dropdown-item" href="#">Another One</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="javascript:void(0)">
+            <img src="{{this.User.logo}}" alt="" style="width: 35px; height: 35px; border-radius: 50%;"/>
+            <p>
+              <span class="d-lg-none d-md-block">{{this.User.name}}</span>
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="nav">
+      <li routerLinkActive="active" class="nav-item">
+        <a class="nav-link" routerLink="/menu">
+          <img src="/assets/img/icono-inicio.png" alt="" />
+          <p>Inicio</p>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+        <img src="/assets/img/icono-terceros.png" alt="" style="width: 25px" /><p>Contactos</p>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/customers/list">Clientes</a>
+          <a class="dropdown-item" routerLink="/suppliers/list">Proveedores</a>
+          <a class="dropdown-item" routerLink="/sellers/list">Vendedores</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+        <img src="/assets/img/icono-cart.png" alt="" style="width: 25px" /><p>Ventas</p>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/orders/list">Pedidos</a>
+          <a class="dropdown-item" routerLink="/invoices/list">Facturas de venta</a>  
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+        <img src="/assets/img/icono-inventario.png" alt="" style="width: 25px" /><p>Inventario</p>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/items/list">Items</a>
+          <a class="dropdown-item" routerLink="/items/transactions">Movimientos de Inventario</a>
+          <a class="dropdown-item" routerLink="/delivery-notes/list">Remisiones</a>
+          <a class="dropdown-item" routerLink="/items/warehouses/">Bodegas</a>
+          <a class="dropdown-item" routerLink="/items/lines/">Líneas</a>
+          <a class="dropdown-item" routerLink="/items/groups/list">Grupo</a>
+          <a class="dropdown-item" routerLink="/items/subgroups/list">Sub grupo</a>
+          <a class="dropdown-item" routerLink="/items/brands/">Marca</a>
+          <a class="dropdown-item" routerLink="/items/models/">Modelos</a>
+
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+        <img src="/assets/img/icono-plancontable4.png" alt="" style="width: 25px" /><p>Contabilidad</p>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/assistant/list">Catálogo de cuentas</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+        <img src="/assets/img/icono-configuracion.png" alt="" style="width: 25px" /><p>Configuracion</p>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/settings/company">empresa</a>
+        </div>
+      </li>
+
+
+
+
+    </ul>
+  </div>
+  

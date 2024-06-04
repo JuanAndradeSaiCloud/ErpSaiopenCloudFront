@@ -1,0 +1,102 @@
+*{
+    --color-fondo: #FDFDFD;
+    --color-fondo2: #FDFDFD;
+    --color-primario: #0F4D7E;
+    --color-letras: #151618;
+}
+h2, h3, p, a, th{
+    font-family: 'Inter', sans-serif;
+}
+.dropdown-menu{
+    background-color: white;
+    border-radius: 10px;
+}
+.logo {
+    background-color: var(--color-primario);
+}
+.logo .simple-text{
+    color: var(--color-fondo);
+    padding: 5px 0px;
+    display: inline-block;
+    font-size: 18px;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 28px;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+}
+
+/* .logo a{
+    color: #0984e3;
+    text-decoration: none;
+} */
+.sidebar-wrapper{
+    box-shadow: none;
+}
+.nav .nav-link{
+    color: var(--color-letras);
+}
+.logo .logo-img {
+    width: 15px;
+    display: block;
+    max-height: 30px;
+    margin-left: 13px;
+    margin-right: 15px;
+}
+
+.sidebar .logo-img img {
+    width: 35px;
+    top: 23px;
+    position: absolute;
+}
+
+fa-icon {
+    font-size: 20px;
+    float: left;
+    margin-right: 15px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #a9afbb;
+}
+
+.sidebar-wrapper {
+    background-color: var(--color-fondo);
+    box-shadow: none !important;
+}
+.sidebar-wrapper .nav .nav-item .nav-link p, span{
+    display: inline-block;
+    left: 10px;
+    color: var(--color-letras);
+}
+.sidebar-wrapper .nav-link:hover {
+    background-color: #0F4D7E;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.sidebar-wrapper .nav .nav-item .nav-link:hover p, span{
+    color: #fff;
+    transition: 400ms;
+}
+
+/* .sidebar[data-color="BlueS"] li.active > a {
+    background-color: #0984E3;
+}
+.sidebar[data-color="BlueS"] li.active > a > p {
+    color: white !important;
+} */
+.dropdown-toggle::after {
+    display: inline-block;
+    /* margin-left: 90px; */
+    float: right;
+    margin-top: 12px;
+    vertical-align: 0.255em;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    color: black;
+  }
+  

@@ -1,0 +1,22 @@
+h2, h3, p, a, th{
+    font-family: 'Inter', sans-serif;
+}
+  footer {
+    width: 100%;
+  }
+  footer p{
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    margin-left: 15px;
+    margin-top: -15px;
+  }
+
+  footer p {
+    font-weight: bold;
+    opacity: .7;
+  }
+
+  footer .span{
+    opacity: .5;
+  }
+  

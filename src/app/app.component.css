@@ -1,0 +1,12 @@
+/**{
+    font-family: 'Inter', sans-serif;
+}
+*/
+.filter{
+    width: 50%;
+}
+@media (min-width:768px){
+    .filter{
+        width: 70%;
+    }
+}
